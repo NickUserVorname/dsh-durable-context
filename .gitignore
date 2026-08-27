@@ -1,0 +1,14 @@
+.env
+.env.*
+*.key
+*.pem
+secrets/
+private/
+
+.DS_Store
+Thumbs.db
+.vscode/
+
+full-environment/*.zip
+full-environment/*.7z
+full-environment/*.rar

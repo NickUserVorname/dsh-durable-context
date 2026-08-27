@@ -1,0 +1,41 @@
+# v0.8.0 local-only host composition hardening.
+# This bundle is applied after @deepseek-ai/dsh-base and @deepseek-ai/dsh-web-app,
+# so these id-targeted rows override stock external routes before inserting control.
+- id: agent-default-model
+  config:
+    provider: llama-local
+    model: qwen3.8-27b
+
+- id: session-title-llm
+  disabled: true
+
+- id: web-search-deepseek
+  disabled: true
+
+- id: llm-deepseek
+  disabled: true
+
+- id: session-telemetry-otel
+  disabled: true
+
+- insert:
+    - id: local-v4-control
+      name: local-dsh-v4-control
+      config:
+        maxGoalRounds: 6
+        maxStepsPerTurn: 12
+        maxToolCallsPerTurn: 39
+        maxTokensPerRequest: 16384
+        identicalFailureLimit: 1
+        cancelAfterBlockedAttempts: 2
+        checkpointEverySteps: 3
+        tokenizerEndpoint: http://127.0.0.1:8080/tokenize
+        roleProvider: llama-local
+        roleModel: qwen3.8-27b
+        testRoleMaxTokens: 8192
+        testRoleInputMaxChars: 48000
+        testCommandTimeoutMs: 600000
+        requestReasoningStarvationThreshold: 10000
+        requestVisibleReserveTokens: 1024
+        starvationRecoveryMaxTokens: 4096
+        maxReasoningStarvationRecoveries: 2

@@ -1,0 +1,9 @@
+{
+  "name": "local-dsh-memory-v09-live-extract",
+  "version": "0.9.0-live-extract.1",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "files": ["index.js", "lib", "README.md", "MANIFEST.md", "KNOWN_LIVE_BUGS.md", "PROVENANCE.md"],
+  "dsh": { "bundle": {} }
+}

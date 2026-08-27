@@ -1,0 +1,12 @@
+# Preserve repository files byte-for-byte.
+# Do not perform Git line-ending normalization.
+* -text
+
+*.zip binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.mkv binary
+*.rar binary
