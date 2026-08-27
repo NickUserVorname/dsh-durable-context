@@ -17,3 +17,6 @@ e747578bbc3015b8bb36a38b6ff43c56932a48ab69acff0d49dc14ad40eefdaf  historical/v0.
 f3b1646a798e288934a3c7c7aa119eb361621af993380608564df6f295f40101  historical/v0.7.x/QWEN_V4_FOR_DSH_v0.7.1.zip
 933f3aa66c290d4d2206eae0f127f3a335725a293168e6c6953dfe0cbb32825b  evidence/usage-2026-08-19.redacted.csv
 98dfdc7937e702559641c0361556746059aa119c7cb0a68b297df28e3153bdae  evidence/serverless-usage-2026-08-21.png
+bf0de9eff78e2da2dbcf65bd9006b748bc134e06a76b52c805c17ba9ab1a8174  evidence/qualification/2026-08-28-selective-capture-late-transfer/01-pre-compress-state-checkpoint.raw.txt
+7e992fe4c2cfe1ee0610fbc2da342485aea4c19a2c0d851465dfc0c13f1f3aa8  evidence/qualification/2026-08-28-selective-capture-late-transfer/02-compress-coverage-audit.raw.txt
+8329ffe64519382b51dfede6b8f7a699a0aa9a68d4bfdbd4d9d5df6e073a1d67  evidence/qualification/2026-08-28-selective-capture-late-transfer/03-post-compress-context-injection.raw.txt

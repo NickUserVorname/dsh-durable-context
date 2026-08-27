@@ -19,7 +19,7 @@ These documents describe architecture and intended/implemented semantics. They a
    - recurring failure classes and the model/host responsibility split.
 
 5. [Reproduction and Qualification](REPRODUCTION.md)
-   - demonstrated behavior, missing semantic canaries and evidence to capture.
+   - demonstrated behavior, the positive late-transfer qualification, the pending negative semantic-gap canary, and evidence to capture.
 
 6. [Related Work](RELATED_WORK.md)
    - prior-art positioning and claim discipline.
@@ -41,4 +41,3 @@ For retrospective engineering analysis, see:
 For frozen version lineage, see:
 
 - [`../historical/`](../historical/)
-

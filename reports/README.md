@@ -26,11 +26,12 @@ Later live qualification can add evidence without making the old report a false 
 
 For current live status, prefer:
 
-1. `../evidence/live-logs/`
-2. `../evidence/memory-injections/`
-3. `../memory-stack/`
-4. current root `README.md`
-5. reports for causal history and interpretation
+1. `../evidence/qualification/`
+2. `../evidence/live-logs/`
+3. `../evidence/memory-injections/`
+4. `../memory-stack/`
+5. current root `README.md`
+6. reports for causal history and interpretation
 
 ## Report provenance
 
@@ -43,6 +44,3 @@ The engineering body is not rewritten merely to make the repository look cleaner
 A public repository copy may omit appended raw personal notes that are not part of the engineering report. The omitted material is preserved outside the public repository in the pre-publication documentation backup.
 
 Public-link cleanup may remove tracking query parameters from external URLs without changing the cited destination.
-
-
-

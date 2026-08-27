@@ -1,0 +1,39 @@
+
+  "mode": "merge",
+  "known": [
+    "Folder C:\\Users\\vova7\\Downloads\\Folder 12 contains 18 Cyrillic-named PNGs (Снимок экрана 2026-08-22..26) + empty .git + .dsh/project state (intake UNRESOLVED, task NO_TASK, project created 2026-08-27 23:58, after all screenshots)",
+    "Img 1 (08-22): YouTube @Pimpom-shorts 'Deadpool Dug Up Wolverine', pinned comment cites Logan(2017)/Deadpool&Wolverine(2024)/Bye Bye Bye NSYNC; 201K likes",
+    "Imgs 2-12 (08-23 08:55-08:56, 11 shots in 43s): dark LLM-serving dashboard, 3-day window, 'All locations', top bar 'Configure deployments'/'Playground'/'Try this model!'; panels Throughput (avg P50 30 - P99 77 tok/s, decaying), Latency (P99 75.63s avg; 0:00 hover P99 207.64s worst; 3:00 hover P99 24.60s best), E2E (P99 330.26s avg; 0:00 hover 690.53s), Tool Call Error Rate deployment 'Stealth' avg 1.96% w/ spike 9.88% at 22:00, Cache Hit Rate 'Stealth' avg 83.30% w/ 0.56% at 20:00 and 88.05% at 19:00; two 23:00 throughput hovers differ (P50 26 vs 71) = two different days, degradation over window",
+    "Img 13 (08-24): RU benchmark table Gemini 3.7 Flash vs Alibaba Qwen 3.8 (27B): LiveCodeBench v6 81.2/90.3, SWE-bench Pro 65.3/61.7, Agents' Last Exam 26.3/42.9 (mentions xhigh Reasoning), Terminal-Bench 2.1 85.8/73.0, GPQA Diamond 78.4/89.2, MathVision 88.1/94.6; Qwen wins 4/6",
+    "Img 14 (08-25): RU table 'Что получится по TG' (Telegram) local inference tok/s; cut top line ends '...VRAM 3.1, хороший CUDA path, batch 312-2048, без CPU weight-offload'; Qwen3.8-27B MTP off 60-80/50-65 'bandwidth-bound target', +MTP 95-135/75-110; Qwen3-110B A3B +MTP ~150-220 'самый интересный чекпоинт'; also Maverick-70B MoE 12BE, Qwen2.5-72B, R1-Llama-70B, GLM-5-130B (CMР+V100), R1-Qwen-140B MoE",
+    "Img 15 (08-26 09:33): DSH 'Agent presets' page; built-in Standard (In use)/PTC/Minimal/Creator; CUSTOM preset 'qwen-v4' (slug qwen-v4) - matches the QWEN-V4 WORK-MODE POLICY header of this session",
+    "Img 16 (08-26 12:08): RU math olympiad sheet, problem 4 geometric mean of 4,8,16 with handwritten correct solution = 8; problem 5 probability, 140+140 of 350 in two halls, reserve hall probability = 70/350 = 0.2",
+    "Img 17 (08-26 12:11): tiny whiteboard sketch, blue ink '91,' in a box, pen icon; does not match answers 8 or 0.2 - unresolved",
+    "Img 18 (08-26 13:41): Fireworks AI 'Authentication Successful' window, firectl CLI tip 'firectl list models', desktop terminal context",
+    "Leads: A (high) owner evaluating Qwen3.8-27B as backend for their DSH harness: benchmark(24)->hw sizing(25)->DSH preset qwen-v4(26 AM)->Fireworks AI account(26 PM); B (moderate) 'Stealth' dashboard = Qwen deployment codename, degradation likely caused re-evaluation; C (moderate) math sheet + sketch one session, '91,' unexplained; D (weak) YouTube shot unrelated entertainment"
+  ],
+  "constraints": [
+    "Non-Force Get-ChildItem on this folder silently omits all Cyrillic-named PNGs; must use -Force (observed this session)",
+    "state.json updated 2026-08-27T18:58:49Z (local 27.08 23:58) = project init AFTER all screenshots; screenshots are pre-existing source material"
+  ],
+  "decisions": [
+    "Treated all 18 PNGs as one evidence set; separated observed vs inferred in report; did not mutate workspace (NO_TASK)"
+  ],
+  "evidence": [
+    "Exact metric values from dashboard hovers preserved in known[3] (085549-085632 shots)",
+    "IMG14 cut line: 'VRAM 3.1, хороший CUDA path, batch 312-2048, без CPU weight-offload' - VRAM value fragment unresolved",
+    "IMG13 model header exact: 'Alibaba Qwen 3.8 (27B)' vs 'Google Gemini 3.7 Flash'"
+  ],
+  "failed_hypotheses": [],
+  "do_not_repeat": [
+    "Do not re-list the folder without -Force (PNGs vanish from output)",
+    "Do not assert 'Stealth' = Qwen deployment as fact; it is a hypothesis (no model name on dashboard)"
+  ],
+  "open_acceptance": [
+    "User asked for OSINT-style cross-image analysis - delivered in chat",
+    "Unresolved: platform behind dashboard (Fireworks auth happened 08-26, AFTER 08-23 dashboard shots), hardware identity (cropped VRAM line), meaning of '91,' sketch"
+  ],
+  "next_action": [
+    "Await user follow-up; offered options: resolve 'Stealth' identity, recover full img14 top line, map PNGs to DSH source intake (primary/supplementary)"
+  ]
+}

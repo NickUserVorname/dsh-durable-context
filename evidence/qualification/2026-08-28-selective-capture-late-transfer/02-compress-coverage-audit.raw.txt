@@ -1,0 +1,8 @@
+Context semantically evacuated, audited, and compressed.
+Before estimated active surface: ~40232 tokens
+After active surface estimate: ~40385 tokens
+Audited prune candidate surface seq: 14..327
+Raw source events remain in append-only session log: 9
+Recent completed turns retained verbatim: 3
+Coverage audit: Prune candidate 14..327 is early-session setup only: (14, 127) host-generated QWEN-V4 WORK-MODE POLICY — a recurring per-turn injection whose fingerprint already survives in working state (known[5], img 15 'qwen-v4' preset match); (15) user changed approval policy ask→never; (16) trivial '.' user message; (17) system-reminder pointing at an EMPTY $DSH_HOME/AGENTS.md (no instruction content); (18) runtime-context snapshot (file policy danger-full-access, approval prompts disabled) which is re-injected each turn and is present verbatim in the current turn's context outside the candidate; (118) assistant greeting; (128) user admin note: session label reads M7RK-5316, "No action needed"; (327) assistant acknowledgment of that label. All substantive investigative findings (18 PNGs, dashboard metrics, benchmark tables, DSH preset, leads A–D, -Force constraint, NO_TASK decision, open items) already live in the investigative working state (CP-4bd51acb, protocol_committed_through_seq 14227, which far exceeds this candidate surface). Transferred: the M7RK-5316 label fact and the user-changed approval policy. Everything else is transient or survives via per-turn re-injection.
+Checkpoint: CP-43eb1cec-89ec-4ff8-b301-1784399e33f4

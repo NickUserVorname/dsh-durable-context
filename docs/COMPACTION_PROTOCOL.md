@@ -95,7 +95,11 @@ A preserved live trace demonstrates:
 
 That case proves reclamation of material that already had sufficient surviving representation.
 
-The preserved live corpus does not yet contain a deliberately constructed positive semantic-transfer canary and matching negative semantic-refusal canary.
+A later `M7RK-5316` qualification demonstrates the complementary positive path where relevant material is missing from the surviving state before reclamation. `/compress` audits candidate surface `14..327`, explicitly reports the `M7RK-5316` fact as transferred, and the subsequent host-injected state contains it. The recording then demonstrates fresh-chat recall without user repetition.
+
+See the [machine-readable qualification case](../evidence/qualification/2026-08-28-selective-capture-late-transfer/) and [qualification video](https://youtu.be/V3mXudvJZy4).
+
+A deliberately constructed negative semantic-refusal canary remains pending and is not claimed as demonstrated.
 
 See [REPRODUCTION.md](REPRODUCTION.md).
 

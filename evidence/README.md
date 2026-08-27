@@ -6,6 +6,10 @@ It is intentionally separated from retrospective engineering reports.
 
 ## Categories
 
+`qualification/`
+
+Complete evidence chains grouped by qualification case, combining related raw runtime artifacts and recording links.
+
 `live-logs/`
 
 Runtime qualification and troubleshooting traces. These are primary evidence and should not be rewritten merely for readability.
