@@ -74,9 +74,9 @@ fresh-chat recall
 
 ## Evidence boundary
 
-This case demonstrates the positive late-transfer path.
+This case demonstrates the positive late-transfer path: material missing from the pre-compress durable state was discovered and transferred during semantic evacuation.
 
-The separate deliberately constructed fail-closed case, where a semantic gap causes reclamation to be refused, remains pending.
+It does not separately demonstrate a naturalistic case where semantic coverage remains unresolved after evacuation and reclamation is therefore refused.
 
 The `/compress` output also prints:
 

@@ -99,9 +99,9 @@ A later `M7RK-5316` qualification demonstrates the complementary positive path w
 
 See the [machine-readable qualification case](../evidence/qualification/2026-08-28-selective-capture-late-transfer/) and [qualification video](https://youtu.be/V3mXudvJZy4).
 
-A deliberately constructed negative semantic-refusal canary remains pending and is not claimed as demonstrated.
+The public corpus does not separately demonstrate a naturalistic case where semantic coverage remains unresolved after evacuation and reclamation is refused.
 
-See [REPRODUCTION.md](REPRODUCTION.md).
+See [REPRODUCTION.md](REPRODUCTION.md) for the qualification boundary.
 
 ## Known transaction-ordering weakness
 

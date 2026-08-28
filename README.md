@@ -417,7 +417,6 @@ The implementation and qualification evidence preserve what happened after that 
 | Same non-Git workspace persistence across chat/UI reset and rename | Observed | [video](https://youtu.be/sIKrtONfS_Y) |
 | Previous state appearing in a different new non-Git project | Observed | [video](https://youtu.be/cNVDXxQAVok) |
 | Git-root project isolation | Demonstrated in current tested setup | [clean qualification](https://youtu.be/V3mXudvJZy4) |
-| Deliberately constructed uncovered semantic-gap refusal | Pending | not claimed |
 
 ## Engineering evolution and reports
 
@@ -581,29 +580,15 @@ This run is evidence for semantic evacuation, explicit late transfer and subsequ
 
 The older `25,582 -> 18,312` trace remains the project's explicit active-surface reduction example.
 
-### Pending semantic-gap qualification
+### Fail-closed qualification considerations
 
-A deliberately constructed end-to-end case in which important semantics remain uncovered and reclamation is explicitly refused is still pending.
+The demonstrated `M7RK-5316` case already exercises a real semantic gap: material absent from the pre-compress durable state was discovered during semantic evacuation and transferred into surviving state.
 
-The desired trace is:
+If missing material is available and recoverable, transfer is the intended behavior rather than refusal.
 
-```text
-old span contains material fact X
-        |
-        v
-surviving state does not sufficiently represent X
-        |
-        v
-coverage audit detects the gap
-        |
-        v
-prune-safe authority does not advance
-        |
-        v
-old active span remains available
-```
+A meaningful fail-closed qualification would require a realistic case where semantic coverage remains unresolved after evacuation, rather than manufacturing failure by corrupting the surviving state.
 
-This behavior is not claimed as demonstrated by the current public corpus.
+The current public corpus does not separately claim a naturalistic unresolved-coverage refusal case.
 
 ### Known transaction-ordering weakness
 

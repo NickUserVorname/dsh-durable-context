@@ -75,36 +75,15 @@ Observed sequence:
 
 The local before/after token estimates printed in this run are not used as compression-ratio evidence.
 
-## Pending negative reclamation canary
+## Fail-closed qualification boundary
 
-A deliberately constructed fail-closed semantic-gap test remains pending.
+The protocol is designed to refuse reclamation when semantic coverage cannot be established.
 
-1. Place a unique canary fact X in older active history.
-2. Construct the survivor basis so X is not sufficiently represented.
-3. Run the audit path.
-4. Verify the audit reports uncovered / uncertain semantics.
-5. Verify prune authority does not advance.
-6. Verify the old active span remains present.
+The demonstrated `M7RK-5316` qualification exercises the normal recoverable-gap path: relevant material was absent from the pre-compress durable state, semantic evacuation discovered it, and the material was transferred into surviving state.
 
-Expected trace:
+If missing semantics remain available and recoverable, transfer is the intended behavior. A meaningful fail-closed qualification would instead require a realistic case where coverage remains unresolved after evacuation.
 
-```text
-old span contains X
-        |
-        v
-X is not sufficiently represented
-        |
-        v
-audit detects the gap
-        |
-        v
-prune-safe boundary does not advance
-        |
-        v
-old active span is retained
-```
-
-This behavior is not claimed as demonstrated by the current public corpus.
+The current public corpus does not separately claim such a naturalistic unresolved-coverage refusal case.
 
 ## Already preserved live evidence
 
